@@ -1,8 +1,7 @@
 # CN-Proj
 Network load Balancer (CN Project)
-This project implements a load balancing system using Python, with a load balancer (load.py), multiple application servers (server.py), and a client simulation (client.py).
-
-_______________________________________Features____________________________________
+This project implements a load balancing system using Python, with a load balancer (load.py), multiple application servers (server.py), and a client simulation (client.py)/
+/////////////////////////Features////////////////////
 
 Multi-threaded HTTP servers
 
@@ -12,7 +11,7 @@ Simulated load testing with retry logic
 
 Enhanced logging for monitoring
 
-_____________________________________Files_____________________________________________________
+////////////////////////Files////////////////////
 
 server.py: Starts a multi-threaded HTTP server.
 
@@ -22,7 +21,7 @@ client.py: Simulates traffic to the load balancer.
 
 100MB.bin: A sample file served by the HTTP servers.
 
-____________________________________Prerequisites______________________________________________
+///////////////////////////Prerequisites////////////////
 
 Python 3.7 or higher
 
@@ -31,7 +30,7 @@ requests library (install using pip install requests)
 Linux/MacOS/Windows terminal
 
 
-____________________________________Setup Instructions_____________________________________
+////////////////////////////Setup Instructions//////////////////
 
 step 1: Place all the project files in the same directory.
 
