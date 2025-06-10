@@ -1,57 +1,98 @@
-# CN-Proj
-Network load Balancer (CN Project)
-This project implements a load balancing system using Python, with a load balancer (load.py), multiple application servers (server.py), and a client simulation (client.py)/
-/////////////////////////Features////////////////////
+Here's a more polished and visually appealing version of your project description for a GitHub README:
 
-Multi-threaded HTTP servers
+---
 
-Load balancing based on active connections
+# 🚦 CN Project: Network Load Balancer
 
-Simulated load testing with retry logic
+This project demonstrates a simple **Load Balancer** system using Python. It includes a **multi-threaded HTTP server**, a **load balancer** that distributes client requests, and a **client simulator** to generate test traffic.
 
-Enhanced logging for monitoring
+---
 
-////////////////////////Files////////////////////
+## 🔧 Features
 
-server.py: Starts a multi-threaded HTTP server.
+* ✅ **Multi-threaded HTTP Servers**
+  Efficient handling of multiple client connections using Python's threading.
 
-load.py: Implements a load balancer and manages connections between clients and servers.
+* 🎯 **Dynamic Load Balancing**
+  Balances incoming traffic based on **active connections** for better performance.
 
-client.py: Simulates traffic to the load balancer.
+* 🔄 **Simulated Load Testing with Retry Logic**
+  Client simulation includes retry mechanisms for robust testing.
 
-100MB.bin: A sample file served by the HTTP servers.
+* 📈 **Enhanced Logging**
+  Monitor system behavior with clear and informative logs.
 
-///////////////////////////Prerequisites////////////////
+---
 
-Python 3.7 or higher
+## 📁 Project Structure
 
-requests library (install using pip install requests)
+| File        | Description                                                  |
+| ----------- | ------------------------------------------------------------ |
+| `server.py` | Starts a multi-threaded HTTP server that serves `100MB.bin`. |
+| `load.py`   | Implements the load balancer and manages server connections. |
+| `client.py` | Simulates client traffic to the load balancer.               |
+| `100MB.bin` | A sample file served by the application servers.             |
 
-Linux/MacOS/Windows terminal
+---
 
+## ✅ Prerequisites
 
-////////////////////////////Setup Instructions//////////////////
+* Python **3.7 or higher**
+* `requests` library
+  *(Install via `pip install requests`)*
+* Linux / macOS / Windows terminal
 
-step 1: Place all the project files in the same directory.
+---
 
-Ensure 100MB.bin exists in the directory to be served by the servers.
+## 🚀 Getting Started
 
-Step 2: Run the Application Servers
+### 🔹 Step 1: Setup
 
-Open a terminal.
+1. Clone this repository or download the project files.
+2. Ensure the file `100MB.bin` is present in the same directory.
 
-Start the application servers by specifying the start and end port numbers (e.g., ports 8001 to 8005):
+### 🔹 Step 2: Start Application Servers
 
+Open a terminal and run:
+
+```bash
 python3 load.py 8001 8005
+```
 
-This initializes the load balancer on port 6000 and starts the servers on the specified port range.
+This will:
 
-Step 3: Simulate Client Requests
+* Start the **load balancer on port 6000**
+* Start **application servers** on ports `8001` to `8005`
 
-Open another terminal.
+### 🔹 Step 3: Simulate Client Requests
 
-Run the client simulation script:
+Open **another terminal** and run:
 
+```bash
 python3 client.py
+```
 
-This sends multiple HTTP requests to the load balancer and distributes the load across the servers.
+This sends multiple HTTP requests to the load balancer, which then distributes them across the application servers.
+
+---
+
+## 📊 Example Output
+
+Logs will show real-time request distribution, server response, and retry attempts (if any). Useful for monitoring and debugging load balancing behavior.
+
+---
+
+## 💡 Notes
+
+* The project is designed for educational purposes and local testing.
+* You can scale the number of servers by modifying the port range in `load.py`.
+
+---
+
+## 📬 Feedback & Contributions
+
+Feel free to open issues or pull requests to improve the project!
+
+---
+
+Let me know if you'd like a version with screenshots, badges, or markdown styling enhancements like collapsible sections.
